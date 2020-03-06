@@ -28,11 +28,11 @@ namespace FormProject
             b.Size = new Size(100, 50);
             b.Location = new Point(200,200);
             this.Controls.Add(b);
-            b.Click += new EventHandler(this.b_Click);
+            b.Click += delegate (object sender1,EventArgs e1)
+            {
+                MessageBox.Show("Hello World");
+            };
         }
-        public void b_Click(object sender, EventArgs e)
-        {
-             MessageBox.Show("Hello World");
-        }
+       
     }
 }
