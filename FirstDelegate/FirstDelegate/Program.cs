@@ -20,6 +20,9 @@ namespace FirstDelegate
             DelegateAge gd = new DelegateAge(MyDelegate.GetAge);
             int age=gd(24);
             WriteLine(age);
+
+
+
             
              
         }
